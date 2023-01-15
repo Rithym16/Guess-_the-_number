@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+    int num;
+    srand(time(0));
+    num=rand()%200+1; //to guess a number between 1 and 200
+        printf("%d",num);
+    printf("enter a guess");
+int guess,c=0;
+while(num>0){
+  scanf("%d",&guess);
+if(num>guess){
+  printf("guess a higher number");
+}
+else if(num<guess){
+  printf("guess a lower number");
+        }
+    else{
+        c++;
+        printf("You guessed the number right in %d attempts",c);
+         
+   } c++;
+    }
+}
